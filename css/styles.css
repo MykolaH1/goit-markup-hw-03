@@ -1,4 +1,5 @@
-/*кольори:
+/*
+кольори:
 колір основнгго тексту  #757575
 вториний колір тексту #212121
 колір акцент #2196F3
@@ -7,6 +8,10 @@
 колір футера #2F303A
 чорний колір #000000
 сірий колір у футері rgba(255, 255, 255, 0.6)
+
+шрифти: Roboto, Raleway
+Roboto: 900,700,500,400
+Releway: 700
 */
 :root{
    --primary-text-color: #757575;
@@ -18,9 +23,9 @@
    --black-color: #000000;
    --silver-color: rgba(255, 255, 255, 0.6);
 }
-
-
 body{
+   margin: 0;
+
    background-color: var(--background-color);
    color: var(--primary-text-color);
 
@@ -29,8 +34,13 @@ body{
    line-height: 1.14;
    letter-spacing: 0.03em;
 }
-
-/*хеадер*/
+.container{
+   width: 1230px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+/*хедер*/
 .logo{
    color: var(--black-color);
 
@@ -178,8 +188,8 @@ body{
    line-height: 1.88;
    letter-spacing: 0.06em;
 }
-/*сторінка портфоліо*/
 
+/*сторінка портфоліо*/
 .list .button{
    background-color: var(--secondary-background-color);
    color: var(--title-text-color);
