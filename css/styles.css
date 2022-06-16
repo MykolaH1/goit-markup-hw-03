@@ -53,9 +53,7 @@ body{
 .logo span{
    color: var(--accent-color);
 }
-.footer-logo{
-   color: var(--background-color);
-}
+
 
 /*site nav*/
 .site-nav .link{
@@ -180,8 +178,20 @@ body{
 }
 
 /*footer*/
+.footer-logo {
+   
+   color: var(--background-color);
+}
 .footer-section{
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 60px;
+   padding-bottom: 60px;
+
    background-color: var(--footer-color);
+}
+.footer-section address{
+   padding-top: 20px;
 }
 .footer-nav .link{
    color: var(--silver-color);
@@ -225,7 +235,6 @@ body{
 
 /*сторінка портфоліо*/
 .list .button{
-  
    padding: 6px 22px;
 
    background-color: var(--secondary-background-color);
@@ -247,12 +256,10 @@ body{
    color: var(--background-color);
 }
 /*projects-list*/
-.projects-list .img{
-   padding-bottom: 20px;
-}
 .projects-list .title{
    margin-top: 0;
    margin-bottom: 4px;
+   padding-top: 20px;
    color: var(--title-text-color);
 
    font-size: 18px;
