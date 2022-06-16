@@ -34,11 +34,17 @@ body{
    line-height: 1.14;
    letter-spacing: 0.03em;
 }
+/*утиліти*/
 .container{
    width: 1230px;
    margin: 0 auto;
    padding-left: 15px;
    padding-right: 15px;
+}
+.list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
 }
 /*хедер*/
 .logo{
@@ -53,9 +59,30 @@ body{
 .logo span{
    color: var(--accent-color);
 }
+.main-nav{
+   display: flex;
+   align-items: center;
 
+}
 
 /*site nav*/
+.site-nav{
+   display: flex;
+   margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+   margin-right: 50px;
+   
+}
+.auth-nav{
+   display: flex;
+   margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+   margin-right: 50px;
+}
+
+.auth-nav .item,
 .site-nav .link{
    color: var(--title-text-color);
 
@@ -212,11 +239,7 @@ body{
    text-decoration: none;
 }
 
-.list{
-   padding: 0;
-   margin: 0;
-   list-style: none;
-}
+
 
 
 
