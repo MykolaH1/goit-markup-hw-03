@@ -136,14 +136,19 @@ body{
 
 /*hero*/
 .hero{
+   padding-top: 200px;
+   padding-bottom: 200px;
+
    background-color: var(--footer-color);
 
    text-align: center;
 }
 .hero-title{
+   width: 696px;
    margin-top: 0;
    margin-bottom: 30px;
-   padding-top: 200px;
+   margin-left: auto;
+   margin-right: auto;
 
    color: var(--background-color);
 
@@ -155,7 +160,6 @@ body{
 }
 .hero .button {
    padding: 10px 32px;
-   margin-bottom: 200px;
    min-width: 200px;
 
    background-color: var(--accent-color);
@@ -180,8 +184,14 @@ body{
    font-size: 36px;
    line-height: 1.16;
    text-align: center;
-   
 }
+
+.section-peculiarities{
+   padding-bottom: 0;
+}
+.section-title-none{
+   display: none;
+ }
 
 /*peculiarities*/
 .peculiarities-list{
@@ -201,6 +211,7 @@ body{
    text-transform: uppercase;
 }
 .peculiarities-list .text{
+   width: 270px;
    margin-top: 0;
    margin-bottom: 0;
 
@@ -220,7 +231,6 @@ body{
 }
 .team-list{
    display: flex;
-   
 }
 .team-list .item:not(:last-child) {
    margin-right: 30px;
@@ -228,10 +238,13 @@ body{
 .team-list .item{
    background-color: var(--background-color);
 }
+.team-info{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
 .team-list .title {
    margin-top: 0px;
    margin-bottom: 10px;
-   padding-top: 30px;
 
    color: var(--title-text-color);
 
@@ -243,7 +256,6 @@ body{
 .team-list .text{
    margin-top: 0;
    margin-bottom: 0;
-   padding-bottom: 30px;
 
    font-weight: 400;
    font-size: 16px;
@@ -264,14 +276,17 @@ body{
    background-color: var(--footer-color);
 }
 .footer-section address{
-   padding-top: 20px;
+   margin-top: 20px;
 }
+
 .footer-nav .link{
    color: var(--silver-color);
 
    line-height: 1.71;
    font-style: normal;
    text-decoration: none;
+}.footer-nav .navigation:not(:last-child) {
+   margin-bottom: 9px;
 }
 .footer-nav .link:hover,
 .footer-nav .link:focus {
@@ -306,8 +321,7 @@ body{
 }
 .button-list{
    margin-top: 0;
-   margin-bottom: 0;
-   padding-bottom: 50px;
+   margin-bottom: 50px;
    
    display: flex;
    justify-content: center;
@@ -333,6 +347,10 @@ body{
    
 }
 .card-border{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 24px;
+
    display: block;
    border: 1px solid var(--card-color);
 }
@@ -348,8 +366,6 @@ body{
 .projects-list .title{
    margin-top: 0;
    margin-bottom: 4px;
-   padding-top: 20px; 
-   padding-left: 24px;
 
    color: var(--title-text-color);
 
@@ -360,8 +376,6 @@ body{
 .projects-list .text{   
    margin-top: 0;
    margin-bottom: 0;
-   padding-bottom: 20px;
-   padding-left: 24px;
 
    font-size: 16px;
    line-height: 1.88;
